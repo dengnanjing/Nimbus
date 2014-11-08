@@ -11,7 +11,7 @@ public class HotSwapModule extends AbstractModule {
 
     public HotSwapModule(final HotSwapContext context) {
         super();
-        if (context == null){
+        if (null == context){
             throw new IllegalArgumentException("HotSwapContext is null");
         }
         this.context = context;
